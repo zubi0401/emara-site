@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 24 16% 6%;      /* #120E0D Deep Mocha */
+  --foreground: 40 50% 95%;     /* #FDFBF7 Champagne White */
+  --card: 24 14% 9%;            /* #1A1514 Solid Card Surface */
+  --card-foreground: 40 50% 95%;
+  --popover: 24 14% 9%;
+  --popover-foreground: 40 50% 95%;
+  --primary: 47 67% 52%;        /* #D4AF37 Metallic Gold */
+  --primary-foreground: 24 16% 6%;
+  --secondary: 37 68% 89%;      /* #F7E7CE Light Champagne */
+  --secondary-foreground: 24 16% 6%;
+  --muted: 24 10% 16%;          /* #2B2220 Low Contrast Mocha */
+  --muted-foreground: 14 10% 60%; /* #A6948F Soft Warm Grey */
+  --accent: 47 67% 52%;
+  --accent-foreground: 24 16% 6%;
+  --destructive: 0 72% 62%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 24 10% 20%;         /* #3A302D Deep border */
+  --input: 24 10% 20%;
+  --ring: 47 67% 52%;
+  --radius: 0.125rem;           /* Luxurious sharp/minimalist corners */
+}
+
+/* Base resets & Fonts */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #120E0D;
+  color: #FDFBF7;
+  font-family: 'Work Sans', sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Heading font overrides */
+h1, h2, h3, h4, h5, h6, .font-serif-luxury {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Custom golden gradient border utilities & scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #120E0D;
+}
+::-webkit-scrollbar-thumb {
+  background: #3A302D;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D4AF37;
+}
+
+/* Custom animation classes */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.text-gold-gradient {
+  background: linear-gradient(135deg, #F7E7CE 0%, #D4AF37 50%, #A67C1E 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

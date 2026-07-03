@@ -1,0 +1,117 @@
+{
+  "project_name": "Emara Software Solutions",
+  "theme": "dark",
+  "archetype": "Archetype 5 (Luxury)",
+  "design_philosophy": "Refined restraint plus expressive detail. Atmospheric layouts, premium typography, tactile luxury cues (mocha/gold), and high-polish motion over generic SaaS blocks. Editorial, immersive, restrained, and expensive-looking.",
+  "colors": {
+    "background": "#120E0D",
+    "surface": "#1A1514",
+    "surface_hover": "#2B2220",
+    "primary": "#D4AF37",
+    "primary_hover": "#F0C84B",
+    "secondary": "#F7E7CE",
+    "text_primary": "#FDFBF7",
+    "text_secondary": "#A6948F",
+    "border": "#3A302D",
+    "border_focus": "#D4AF37",
+    "error": "#E05A5A",
+    "success": "#4CAF50",
+    "glass_background": "rgba(26, 21, 20, 0.6)",
+    "glass_border": "rgba(212, 175, 55, 0.2)"
+  },
+  "typography": {
+    "fonts": {
+      "heading": "'Playfair Display', serif",
+      "body": "'Work Sans', sans-serif"
+    },
+    "scales": {
+      "h1": "text-5xl sm:text-6xl tracking-tight leading-none font-normal",
+      "h2": "text-3xl sm:text-4xl tracking-tight leading-snug font-normal",
+      "h3": "text-2xl sm:text-3xl tracking-tight leading-snug font-normal",
+      "h4": "text-xl sm:text-2xl tracking-tight",
+      "body": "text-base leading-relaxed font-light text-[#F7E7CE]",
+      "small": "text-sm uppercase tracking-[0.2em] text-[#D4AF37]"
+    }
+  },
+  "layout_spacing": {
+    "container": "max-w-7xl mx-auto px-6 sm:px-12",
+    "section_padding": "py-24 sm:py-32",
+    "card_padding": "p-8",
+    "grid_gap": "gap-8 sm:gap-12"
+  },
+  "surfaces": {
+    "card": "bg-[#1A1514] border border-[#3A302D] rounded-none md:rounded-sm transition-all duration-300 hover:border-[#D4AF37]/50 hover:-translate-y-1 hover:shadow-2xl hover:shadow-[#D4AF37]/10",
+    "glass": "backdrop-blur-xl bg-[#1A1514]/60 border border-[#D4AF37]/20 shadow-[0_8px_32px_rgba(0,0,0,0.5)]",
+    "dashboard_panel": "bg-[#1A1514] border border-[#3A302D] rounded-lg"
+  },
+  "components": {
+    "button_primary": "bg-[#D4AF37] text-[#120E0D] px-8 py-4 uppercase tracking-[0.1em] font-medium transition-all duration-300 hover:bg-[#F7E7CE] hover:shadow-[0_0_20px_rgba(212,175,55,0.4)]",
+    "button_secondary": "bg-transparent border border-[#D4AF37] text-[#D4AF37] px-8 py-4 uppercase tracking-[0.1em] font-medium transition-all duration-300 hover:bg-[#D4AF37] hover:text-[#120E0D]",
+    "input": "bg-transparent border-b border-[#3A302D] text-[#FDFBF7] py-3 focus:outline-none focus:border-[#D4AF37] focus:ring-0 transition-colors placeholder:text-[#A6948F]",
+    "marquee": "react-fast-marquee with Playfair Display italic, low contrast text (#2B2220), massive gaps",
+    "data_testid_requirement": "All interactive elements (buttons, inputs, filters, portfolio items) MUST have role-based data-testid attributes."
+  },
+  "animations": {
+    "scroll": "Use Lenis for smooth momentum scrolling.",
+    "page_transitions": "Framer Motion for soft fade and slide-up (duration 0.8s, ease [0.22, 1, 0.36, 1]).",
+    "hover": "Subtle border color shifts to gold, slight negative Y translations, delicate glow effects.",
+    "parallax": "Use Framer Motion or React Spring Parallax for hero image and typography layering."
+  },
+  "pages_and_sections": [
+    {
+      "name": "Landing Page",
+      "description": "Editorial hero section with cinematic depth. Large Playfair Display typography overlapping the high-end dark gold abstract background. Navigation in a crystal glass header."
+    },
+    {
+      "name": "Services Showcase",
+      "description": "Bento grid layout with asymmetric spans. Hovering over a service (UI/UX, SEO, etc.) shifts the border to gold and reveals a luxurious glassmorphism tooltip or sub-text."
+    },
+    {
+      "name": "Portfolio Showcase",
+      "description": "Elegant grid with masonry or offset alignment. Filter tags (e.g., Web Dev, Branding) are minimal uppercase text. Clicking an item opens a full-screen or large modal with Playfair titles, Work Sans descriptions, and rich imagery. Dynamically loaded via CRUD."
+    },
+    {
+      "name": "Contact Inquiry Form",
+      "description": "A refined, minimalist form utilizing Shadcn logic but heavily customized to look like an editorial inquiry sheet. Only bottom borders for inputs, elegant gold submit button."
+    },
+    {
+      "name": "Secure Admin Dashboard",
+      "description": "Control-room grid with a luxury twist. Deep mocha background, solid #1A1514 cards with delicate 1px #3A302D borders. Clear Work Sans typography for data. Gold accents for active states and primary actions. Includes Tabs for 'Projects', 'Inquiries', and 'Settings' (Resend API key)."
+    }
+  ],
+  "media": {
+    "icons": "lucide-react with stroke-width 1.5, colored in #D4AF37 or #F7E7CE depending on contrast.",
+    "images": [
+      {
+        "category": "logo",
+        "url": "https://customer-assets.emergentagent.com/job_7cb496ad-7480-4824-a6f9-19b9c91ce359/artifacts/0jts0xxx_WhatsApp%20Image%202026-06-21%20at%2012.53.42%20PM.jpeg",
+        "description": "Emara Software Solutions Official Logo"
+      },
+      {
+        "category": "hero_background",
+        "url": "https://images.pexels.com/photos/31622917/pexels-photo-31622917.jpeg",
+        "description": "Intricate gold abstract sculpture on dark background for luxurious hero visual"
+      },
+      {
+        "category": "about_agency",
+        "url": "https://images.pexels.com/photos/8135119/pexels-photo-8135119.jpeg",
+        "description": "Luxury minimalist office representing the agency's premium workspace"
+      },
+      {
+        "category": "service_ui_ux",
+        "url": "https://images.pexels.com/photos/196645/pexels-photo-196645.jpeg",
+        "description": "Detailed hand-drawn wireframe representing UI/UX Design services"
+      }
+    ]
+  },
+  "instructions_to_main_agent": [
+    "Install 'framer-motion', '@studio-freight/lenis', 'lucide-react'.",
+    "Use pure HTML/Tailwind for the public marketing pages (Landing, Portfolio, Services, Contact) to achieve the editorial, asymmetrical layout.",
+    "Use Shadcn UI components for the Admin Dashboard and the Contact form logic, customizing them to fit the dark mocha/gold theme.",
+    "DO NOT use Inter or standard fonts for headings; enforce 'Playfair Display' for all titles.",
+    "Enforce high-contrast accessibility: use the Champagne text (#FDFBF7) on Mocha backgrounds.",
+    "For the hero overlay, use a subtle gradient from #120E0D to transparent so the text is readable but the image breathes.",
+    "Ensure the Admin Dashboard has full CRUD capability for the Portfolio (stored in MongoDB) and allows email settings configuration (Resend API).",
+    "CRITICAL: Add 'data-testid' to all interactive elements, forms, tabs, and buttons."
+  ]
+}
